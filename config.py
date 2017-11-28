@@ -7,7 +7,7 @@ DATA_DIR = os.path.join(PWD, "data")
 
 STEAM_API_KEY = "" # Apply then put your own steam api key here
 
-JSON_PATH = os.path.join(DATA_DIR, "database.old.json")
+JSON_PATH = os.path.join(DATA_DIR, "database.json")
 
 DB_PATH = os.path.join(DATA_DIR, "database.db")
 
