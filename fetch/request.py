@@ -118,12 +118,12 @@ def filter_arcade_matches(matches):
     return formal_matches
 
 
-def fatch_eligible_matches(num_per_account=500, accounts=[], max_overload=1):
+def fetch_eligible_matches(num_per_account=500, accounts=[], max_overload=1):
     matches = []
     for each in accounts:
         matches = merge_matches(matches, get_recent_matches(num_per_account, max_overload, account_id=each, min_players=10))
 
-    print("Found {} matches, Fatching details...".format(len(matches)))
+    print("Found {} matches, fetching details...".format(len(matches)))
     matches = get_details_of_matches(matches, max_overload)
 
     print("Filtering matches...")

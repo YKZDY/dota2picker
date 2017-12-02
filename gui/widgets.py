@@ -57,7 +57,7 @@ class DisplayHeroList(QtWidgets.QWidget):
     def init_ui(self):
         layout = QtWidgets.QHBoxLayout()
         self.table.setColumnCount(5)
-        self.table.setHorizontalHeaderLabels(["Name", "Sum Score", "Hero Score", "Coop Score", "Anti Score"])
+        self.table.setHorizontalHeaderLabels(["Name", "Total Score", "Hero Score", "Coop Score", "Anti Score"])
         self.table.setEditTriggers(QtWidgets.QAbstractItemView.NoEditTriggers)
         self.table.setSelectionBehavior(QtWidgets.QAbstractItemView.SelectRows)
 
