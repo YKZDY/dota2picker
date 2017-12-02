@@ -12,18 +12,18 @@ Dota2Picker is a simple Dota2 hero picking helper by analyzing historical matche
 
 First of all, you need to apply a steam [api key](https://steamcommunity.com/dev/apikey), then fill out your key in config.py to make Dota2Picker have permission to access the Steam server.
 
-There's an account list in config.py which will be used to grab data from server. Because of the restrict from Steam, right now Dota2Picker can only access 500 matches for each account. And the matches from the different accounts will be merged automatically after fatching.
+There's an account list in config.py which will be used to grab data from server. Because of the restrict from Steam, right now Dota2Picker can only access 500 matches for each account. And the matches from the different accounts will be merged automatically after fetching.
 
 ### Usage
 
-Before using Dota2Picker, you must fatch the data from server to your local database.
+Before using Dota2Picker, you must fetch the data from server to your local database.
 
     from dota2picker.main import refresh_database, update_database
 
-    // Fatch by overwriting old database.
+    // fetch by overwriting old database.
     refresh_database()
 
-    // Fatch then merge new data to existing database.
+    // fetch then merge new data to existing database.
     update_database()
 
 Run Dota2Picker !!!

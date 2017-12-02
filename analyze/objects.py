@@ -1,6 +1,6 @@
 import numpy as np
 from ..config import STEAM_API_KEY, NPY_PATH
-from ..fatch.core import load_from_json
+from ..fetch.core import load_from_json
 from ..utils.core import get_heroes_id, get_hero_name_en, get_hero_name_cn
 
 

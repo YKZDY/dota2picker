@@ -2,7 +2,7 @@
 import sys
 from Qt import QtWidgets
 import dota2api
-from .fatch.core import fatch_to_json, merge_to_json
+from .fetch.core import fetch_to_json, merge_to_json
 from .analyze.core import refresh_stats, get_recommended_list
 from .gui.core import Dota2Picker
 from .config import STEAM_API_KEY
@@ -16,10 +16,10 @@ def refresh_database():
     api.update_heroes()
     api.update_game_items()
 
-    print("Fatching Matches' from Steam...")
-    fatch_to_json()
+    print("fetching Matches from Steam...")
+    fetch_to_json()
 
-    print("Analyzing Matches' Data...")
+    print("Analyzing Matches Data...")
     refresh_stats()
 
 
@@ -28,10 +28,10 @@ def update_database():
     api.update_heroes()
     api.update_game_items()
 
-    print("Fatching Matches' from Steam...")
+    print("fetching Matches from Steam...")
     merge_to_json()
 
-    print("Analyzing Matches' Data...")
+    print("Analyzing Matches Data...")
     refresh_stats()
 
 
