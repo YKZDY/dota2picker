@@ -20,19 +20,19 @@ Before using Dota2Picker, you must fetch the data from the server to your local 
 
     from dota2picker.main import refresh_database, update_database
 
-    // fetch by overwriting old database.
+    # fetch by overwriting old database.
     refresh_database()
 
-    // fetch then merge new data to existing database.
+    # fetch then merge new data to existing database.
     update_database()
 
 Run Dota2Picker !!!
 
     from dota2picker.main import picker_cli, picker_gui
 
-    // By inputing 0-5 allies' hero ID and 0-5 enemies' hero ID, picker_cli will 
-    // print an ordered list of suggesting heroes.
+    # By inputing 0-5 allies' hero ID and 0-5 enemies' hero ID, picker_cli will 
+    # print an ordered list of suggesting heroes.
     picker_cli([ally_one, ally_two, ...], [enemy_one, enemy_two, ...], language="en"/"cn")
 
-    // Run graphics user interface. (powerd by qt)
+    # Run graphics user interface. (powerd by qt)
     picker_gui(language="en"/"cn")
