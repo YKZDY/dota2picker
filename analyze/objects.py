@@ -38,8 +38,8 @@ class Statistics(object):
             result = each["radiant_win"]
             for index_x, hero_x in enumerate(heroes):
                 for index_y, hero_y in enumerate(heroes):
-                        self.data[hero_x][hero_y][get_relation(index_x, index_y)][1] += 1
-                        self.data[hero_x][hero_y][get_relation(index_x, index_y)][0] += is_win(index_x, result)
+                    self.data[hero_x][hero_y][get_relation(index_x, index_y)][1] += 1
+                    self.data[hero_x][hero_y][get_relation(index_x, index_y)][0] += is_win(index_x, result)
 
     @staticmethod
     def get_percent(num, sum_num):
