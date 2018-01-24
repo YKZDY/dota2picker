@@ -1,3 +1,4 @@
+import os
 import numpy as np
 from ..config import STEAM_API_KEY, NPY_PATH
 from ..fetch.core import load_from_json
@@ -10,7 +11,7 @@ class Statistics(object):
 
     def __init__(self):
         super(Statistics, self).__init__()
-        self.data = np.load(NPY_PATH)
+        self.data = np.load(NPY_PATH) if os.path.isfile(NPY_PATH) else np.zeros([])
 
     def refresh(self):
         max_id = 0
