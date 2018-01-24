@@ -16,7 +16,7 @@ def refresh_database():
     api.update_heroes()
     api.update_game_items()
 
-    print("fetching Matches from Steam...")
+    print("Fetching Matches from Steam...")
     fetch_to_json()
 
     print("Analyzing Matches Data...")
@@ -28,7 +28,7 @@ def update_database():
     api.update_heroes()
     api.update_game_items()
 
-    print("fetching Matches from Steam...")
+    print("Fetching Matches from Steam...")
     merge_to_json()
 
     print("Analyzing Matches Data...")
