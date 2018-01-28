@@ -51,5 +51,5 @@ class Dota2Picker(QtWidgets.QWidget):
     def refresh_callback(self):
         self.moniter.refresh_data([ally.content for ally in self.allies if ally.content], 
             [enemy.content for enemy in self.enemies if enemy.content])
-        get_team_win_rate([ally.content for ally in self.allies if ally.content], 
-            [enemy.content for enemy in self.enemies if enemy.content])
+        print(get_team_win_rate([ally.content for ally in self.allies if ally.content], 
+            [enemy.content for enemy in self.enemies if enemy.content]))
