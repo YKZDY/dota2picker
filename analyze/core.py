@@ -54,6 +54,4 @@ def get_team_win_rate(allies, enemies):
             each_score.add_enemy(each)
         enemy_score += each_score.sum_score
 
-    print(ally_score, " ", enemy_score)
-
-    return ally_score/enemy_score
+    return ally_score/enemy_score if enemy_score else 0
